@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { EmplyoeeListComponent } from './emplyoee-list/emplyoee-list.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
  
  
 @NgModule({
   declarations: [
     AppComponent,
-     EmplyoeeListComponent
+     EmplyoeeListComponent,
+     CreateEmployeeComponent,
+     UpdateEmployeeComponent
   ],
   imports: [
     BrowserModule,
