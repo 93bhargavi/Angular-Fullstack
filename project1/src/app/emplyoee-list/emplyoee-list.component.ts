@@ -1,4 +1,6 @@
 import { Component , OnInit} from '@angular/core';
+// import { EmpyoeeService } from './empyoee.service';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-emplyoee-list',
@@ -16,7 +18,7 @@ export class EmplyoeeListComponent implements OnInit {
 
   employees:EmplyoeeListComponent[] =[];
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void{
 

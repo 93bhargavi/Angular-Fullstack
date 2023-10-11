@@ -7,5 +7,5 @@ import { Observable } from 'rxjs';
 })
 export class EmpyoeeService {
 
-  constructor() { }
+  constructor(private : ,private httpclient:HttpClient) {}
 }
