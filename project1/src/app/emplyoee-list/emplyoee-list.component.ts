@@ -23,13 +23,15 @@ export class EmplyoeeListComponent implements OnInit {
 
   }
   employee_list:any=[];
-  getEmployees(){
-    this.empyoee.getEmployees({firstName:this.firstName,lastName:this.lastName,emailId:this.emailId}).subscribe((res:any) => {
-      this.employee_list= res;
-    });
-  }
-   
+  getEmployees() {
+    this.empyoee.getEmployees({ firstName: this.firstName, lastName: this.lastName, emailId: this.emailId })
+      .subscribe((res: any) => {
+        this.employee_list= res;
+      });
+  }  
 
 }
  
+
+
  
